@@ -1,0 +1,24 @@
+{
+  "name": "calculator-app",
+  "version": "1.0.0",
+  "description": "A simple but very stylish calculator app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PeteSalcedo/Calculator-App.git"
+  },
+  "keywords": [
+    "Calculator",
+    "reactjs",
+    "flexbox"
+  ],
+  "author": "Pete Salcedo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/PeteSalcedo/Calculator-App/issues"
+  },
+  "homepage": "https://github.com/PeteSalcedo/Calculator-App#readme"
+}
