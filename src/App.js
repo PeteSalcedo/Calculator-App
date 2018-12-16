@@ -44,6 +44,7 @@ class App extends Component {
       <Button>=</Button>
       <Button>-</Button>
       </div>
+      <div className="row">Clear</div>
       </div>
     
       </div>
