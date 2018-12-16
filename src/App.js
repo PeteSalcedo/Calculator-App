@@ -11,6 +11,13 @@ class App extends Component {
       <Button>7</Button>
       <Button>8</Button>
       <Button>9</Button>
+      <Button>/</Button>
+      </div>
+      <div className="row">
+      <Button>6</Button>
+      <Button>5</Button>
+      <Button>4</Button>
+      <Button>x</Button>
       </div>
       </div>
     
