@@ -1,36 +1,34 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 import "./app.css";
 import { Button } from "./components/Button";
-import { Input } from "./components/input";
-import { ClearButton } from "./components/ClearButton"
+import { Input } from "./components/Input";
+import { ClearButton } from "./components/ClearButton";
 import * as math from "mathjs";
 
-
-
 class App extends Component {
-  constructor(props){
-   super(props);
-   this.state={
-     input:""
-   };
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      input: ""
+    };
   }
 
-  addToInput= val => {
-    this.setState({ input: this.state.input + val })
-  }
+  addToInput = val => {
+    this.setState({ input: this.state.input + val });
+  };
 
   handleEqual = () => {
     this.setState({ input: math.eval(this.state.input) });
   };
 
-
   render() {
     return (
       <div className="app">
-      <div className="calc-wrapper">
-      <Input input={this.state.input}></Input>
-      <div className="row">
-      <Button handleClick={this.addToInput}>7</Button>
+        <div className="calc-wrapper">
+          <Input input={this.state.input} />
+          <div className="row">
+            <Button handleClick={this.addToInput}>7</Button>
             <Button handleClick={this.addToInput}>8</Button>
             <Button handleClick={this.addToInput}>9</Button>
             <Button handleClick={this.addToInput}>/</Button>
@@ -53,11 +51,12 @@ class App extends Component {
             <Button handleClick={() => this.handleEqual()}>=</Button>
             <Button handleClick={this.addToInput}>-</Button>
           </div>
-      <div className="row">
-      <ClearButton handleClear={() => this.setState({input:''})}>Clear</ClearButton>
-     </div>
-      </div>
-    
+          <div className="row">
+            <ClearButton handleClear={() => this.setState({ input: "" })}>
+              Clear
+            </ClearButton>
+          </div>
+        </div>
       </div>
     );
   }
