@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import "./app.css";
 import { Button } from "./components/Button";
 import { Input } from "./components/input";
-import { ClearButton } "./components/ClearButton"
+import { ClearButton } from "./components/ClearButton"
 
 
 class App extends Component {
