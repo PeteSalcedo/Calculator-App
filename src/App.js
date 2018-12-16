@@ -3,6 +3,8 @@ import "./app.css";
 import { Button } from "./components/Button";
 import { Input } from "./components/input";
 import { ClearButton } from "./components/ClearButton"
+import * as math from "mathjs";
+
 
 
 class App extends Component {
@@ -16,6 +18,11 @@ class App extends Component {
   addToInput= val => {
     this.setState({ input: this.state.input + val })
   }
+
+  handleEqual = () => {
+    this.setState({ input: math.eval(this.state.input) });
+  };
+
 
   render() {
     return (
