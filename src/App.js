@@ -1,10 +1,16 @@
 import React, { Component } from 'react';
 import "./app.css";
 import { Button } from "./components/Button";
-import { Input } from "./components/Input";
+import { Input } from "./components/input";
 
 
 class App extends Component {
+  constructor(props){
+   super(props);
+   this.state={
+     input:""
+   };
+  }
   render() {
     return (
       <div className="app">
